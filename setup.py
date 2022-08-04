@@ -22,7 +22,7 @@ setup(
     long_description_content_type="text/markdown",
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: Property",
+        "License :: MIT",
         "Environment :: Console",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",
@@ -33,7 +33,7 @@ setup(
     keywords="code encryption",
     author="David Leon (Dawei Leng)",
     author_email="daweileng@outlook.com",
-    license="Property",
+    license="MIT",
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,

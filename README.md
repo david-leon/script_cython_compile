@@ -1,9 +1,15 @@
 # SCC
 [![Python 3.x](https://img.shields.io/badge/python-3.x-brightgreen.svg)](https://www.python.org/downloads/release)
 
-A cmdline tool for cython-compiling a python script, mainly for code encryption purpose. SCC = Script Cython-Compilation.
+A cmdline tool for cython-compiling a python script, mainly for code encryption purpose. 
+SCC = Script Cython-Compilation.
 
-## Manual
+## Install
+```
+python setup.py install
+```
+
+## Usage
 
 Under command-line console, input:
 

@@ -2,6 +2,7 @@
 # Compile the source python script into cython version for deployment.
 # Created   :   7,  3, 2017
 # Revised   :   9, 17, 2018
+#               8,  4, 2022  add explicit language level specification for `cythonize`
 # All rights reserved
 # ------------------------------------------------------------------------------------------------
 __author__ = 'dawei.leng'
@@ -20,7 +21,7 @@ def generate_setup_file(filename, module_name=None, source_file=None):
           "    ext_modules=[Extension(module_name, sources=[r'%s'], extra_compile_args = ['-g0'])]\n" \
           "setup(\n" \
           "    name = module_name,\n" \
-          "    ext_modules = cythonize(ext_modules))" % (module_name, source_file, source_file)
+          "    ext_modules = cythonize(ext_modules, compiler_directives={'language_level' : '3'}))" % (module_name, source_file, source_file)
     with open(filename, mode='wt', encoding='utf8') as f:
         f.write(txt)
 
